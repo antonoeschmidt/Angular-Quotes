@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { KanyeComponent } from './modules/kanye/kanye.component';
 import { HeaderComponent } from './core/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './modules/home/home.component';
+import { QuotesTableComponent } from './modules/quotes-table/quotes-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KanyeComponent,
     HeaderComponent,
-    HomeComponent
+    QuotesTableComponent,
   ],
   imports: [
     BrowserModule,

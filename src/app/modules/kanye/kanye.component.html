@@ -1,2 +1,23 @@
-<h1>Kanye says:</h1>
-<p>{{ quote }}</p>
+<div class="jumbotron text-center">
+  <h1>Kanye says:</h1>
+  <p>"{{ quote }}"</p>
+  <button type="button" class="btn btn-dark" (click)="updateQuote()">
+    Get new Quote
+  </button>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>{{ quotes.length }}</h3>
+      <p>Number of quotes</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>{{ avgLength }}</h3>
+      <p>Average length</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>{{ maxLength }} characters</h3>
+      <p>Max length</p>
+    </div>
+  </div>
+</div>

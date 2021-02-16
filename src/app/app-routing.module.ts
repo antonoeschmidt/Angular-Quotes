@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './modules/home/home.component';
 import { KanyeComponent } from './modules/kanye/kanye.component';
+import { QuotesTableComponent } from './modules/quotes-table/quotes-table.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'kanye', component: KanyeComponent }
+  { path: '', component: KanyeComponent},
+  { path: 'quotes', component: QuotesTableComponent}
 ];
 
 @NgModule({
