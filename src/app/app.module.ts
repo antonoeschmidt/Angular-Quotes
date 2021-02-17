@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { KanyeComponent } from './modules/kanye/kanye.component';
+import { QuotesComponent } from './modules/quotes/quotes.component';
 import { HeaderComponent } from './core/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { QuotesTableComponent } from './modules/quotes-table/quotes-table.component';
@@ -11,7 +11,7 @@ import { QuotesTableComponent } from './modules/quotes-table/quotes-table.compon
 @NgModule({
   declarations: [
     AppComponent,
-    KanyeComponent,
+    QuotesComponent,
     HeaderComponent,
     QuotesTableComponent,
   ],
