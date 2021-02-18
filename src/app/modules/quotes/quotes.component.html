@@ -1,8 +1,21 @@
 <div class="jumbotron text-center">
   <h1>Kanye says:</h1>
   <p>"{{ quote }}"</p>
-  <button type="button" class="btn btn-dark" (click)="updateQuote()">
+  <button
+    type="button"
+    class="btn btn-dark"
+    [disabled]="isFetching"
+    (click)="updateQuote()"
+  >
     Get new Quote
+  </button>
+  <button
+    type="button"
+    class="btn btn-success ml-3"
+    [disabled]="isFetching"
+    (click)="saveQuote()"
+  >
+    Save Quote
   </button>
 </div>
 <div class="container">

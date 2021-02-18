@@ -1,6 +1,5 @@
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
+import { QuotesService } from 'src/app/shared/quotes.service';
 
 @Component({
   selector: 'app-quotes',
@@ -12,29 +11,35 @@ export class QuotesComponent implements OnInit {
   quotes: string[] = [];
   maxLength: number = 0;
   avgLength: number = 0;
+  isFetching = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private quotesService: QuotesService) {}
+
   ngOnInit() {
-    this.getQuote().subscribe((data) => {
+    this.isFetching = true;
+    this.quotesService.getQuotes().subscribe((data) => {
+      this.quotes = data.map((q) => {
+        if (q.quote.length > this.maxLength) this.maxLength = q.quote.length;
+        return q.quote;
+      });
+      this.avgLength = this.quotesService.computeAvg(this.quotes);
+    });
+    this.quotesService.getQuote().subscribe((data) => {
       this.quote = data.quote;
-      this.quotes.push(data.quote);
-      this.avgLength = this.computeAvg();
       if (data.quote.length > this.maxLength)
         this.maxLength = data.quote.length;
+      this.isFetching = false;
     });
   }
-  getQuote(): Observable<IQuote> {
-    return this.http.get<IQuote>('https://api.kanye.rest/');
-  }
+
   updateQuote() {
     this.ngOnInit();
   }
-  computeAvg(): number {
-    let totalLen = 0;
-    this.quotes.map((q) => (totalLen += q.length));
-    return parseFloat((totalLen / this.quotes.length).toFixed(2));
+
+  saveQuote() {
+    this.quotesService
+      .saveQuote(this.quote)
+      .subscribe((data) => this.quotes.push(data.quote));
+    this.ngOnInit();
   }
-}
-interface IQuote {
-  quote: string;
 }
