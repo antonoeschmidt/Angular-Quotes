@@ -1,220 +1,48 @@
 {
   "quotes": [
     {
-      "quote": "Test3",
+      "quote": "Test Quote - Hello World!",
       "id": 1
     },
     {
-      "quote": "We must form a union. We must unify",
+      "quote": "We've gotten comfortable with not having what we deserve",
       "id": 2
     },
     {
-      "quote": "There's a crying need for civility across the board. We need to and will come together in the name of Jesus.",
+      "quote": "My dad got me a drone for Christmas",
       "id": 3
     },
     {
-      "quote": "Trust me ... I won't stop",
+      "quote": "We all self-conscious. I'm just the first to admit it.",
       "id": 4
     },
     {
-      "quote": "I care. I care about everything. Sometimes not giving a f#%k is caring the most.",
+      "quote": "One day I'm gon' marry a porn star",
       "id": 5
     },
     {
-      "quote": "I hate when I'm on a flight and I wake up with a water bottle next to me like oh great now I gotta be responsible for this water bottle",
+      "quote": "Artists are founders",
       "id": 6
     },
     {
-      "quote": "My mother in law Kris Jenner ... makes the best music playlist",
+      "quote": "So many of us need so much less than we have especially when so many of us are in need",
       "id": 7
     },
     {
-      "quote": "2024",
+      "quote": "Manga all day",
       "id": 8
     },
     {
-      "quote": "I really love my Tesla. I'm in the future. Thank you Elon.",
+      "quote": "There's a crying need for civility across the board. We need to and will come together in the name of Jesus.",
       "id": 9
     },
     {
-      "quote": "I am running for President of the United States",
+      "quote": "2024",
       "id": 10
     },
     {
-      "quote": "I hate when I'm on a flight and I wake up with a water bottle next to me like oh great now I gotta be responsible for this water bottle",
+      "quote": "My greatest pain in life is that I will never be able to see myself perform live.",
       "id": 11
-    },
-    {
-      "quote": "We must form a union. We must unify",
-      "id": 12
-    },
-    {
-      "quote": "I feel like I'm too busy writing history to read it.",
-      "id": 13
-    },
-    {
-      "quote": "Empathy is the glue",
-      "id": 14
-    },
-    {
-      "quote": "Artists are founders",
-      "id": 15
-    },
-    {
-      "quote": "I'm nice at ping pong",
-      "id": 16
-    },
-    {
-      "quote": "We're going to move the entire music industry into the 21st Century",
-      "id": 17
-    },
-    {
-      "quote": "One of my favorite of many things about what the Trump hat represents to me is that people can't tell me what to do because I'm black",
-      "id": 18
-    },
-    {
-      "quote": "For me, money is not my definition of success. Inspiring people is a definition of success",
-      "id": 19
-    },
-    {
-      "quote": "The thought police want to suppress freedom of thought",
-      "id": 20
-    },
-    {
-      "quote": "I channel Will Ferrell when I'm at the daddy daughter dances",
-      "id": 21
-    },
-    {
-      "quote": "I am one of the most famous people on the planet",
-      "id": 22
-    },
-    {
-      "quote": "I'd like to meet with Tim Cook. I got some ideas",
-      "id": 23
-    },
-    {
-      "quote": "I am running for President of the United States",
-      "id": 24
-    },
-    {
-      "quote": "I feel like me and Taylor might still have sex",
-      "id": 25
-    },
-    {
-      "quote": "We as a people will heal. We will insure the well being of each other",
-      "id": 26
-    },
-    {
-      "quote": "I still think I am the greatest.",
-      "id": 27
-    },
-    {
-      "quote": "So many of us need so much less than we have especially when so many of us are in need",
-      "id": 28
-    },
-    {
-      "quote": "Perhaps I should have been more like water today",
-      "id": 29
-    },
-    {
-      "quote": "We're going to move the entire music industry into the 21st Century",
-      "id": 30
-    },
-    {
-      "quote": "Two years ago we had 50 million people subscribed to music streaming services around the world. Today we have 400 million.",
-      "id": 31
-    },
-    {
-      "quote": "I'm nice at ping pong",
-      "id": 32
-    },
-    {
-      "quote": "One day I'm gon' marry a porn star",
-      "id": 33
-    },
-    {
-      "quote": "My mother in law Kris Jenner ... makes the best music playlist",
-      "id": 34
-    },
-    {
-      "quote": "For me giving up is way harder than trying.",
-      "id": 35
-    },
-    {
-      "quote": "Burn that excel spread sheet",
-      "id": 36
-    },
-    {
-      "quote": "I think I do myself a disservice by comparing myself to Steve Jobs and Walt Disney and human beings that we've seen before. It should be more like Willy Wonka...and welcome to my chocolate factory.",
-      "id": 37
-    },
-    {
-      "quote": "I'm giving all Good music artists back the 50% share I have of their masters",
-      "id": 38
-    },
-    {
-      "quote": "There are people sleeping in parking lots",
-      "id": 39
-    },
-    {
-      "quote": "The world is our family",
-      "id": 40
-    },
-    {
-      "quote": "We used to diss Michael Jackson the media made us call him crazy ... then they killed him",
-      "id": 41
-    },
-    {
-      "quote": "If I got any cooler I would freeze to death",
-      "id": 42
-    },
-    {
-      "quote": "My greatest award is what I'm about to do.",
-      "id": 43
-    },
-    {
-      "quote": "One of my favorite of many things about what the Trump hat represents to me is that people can't tell me what to do because I'm black",
-      "id": 44
-    },
-    {
-      "quote": "I was just speaking with someone that told me their life story and they used to be homeless.",
-      "id": 45
-    },
-    {
-      "quote": "I am one of the most famous people on the planet",
-      "id": 46
-    },
-    {
-      "quote": "Pulling up in the may bike",
-      "id": 47
-    },
-    {
-      "quote": "We will be recognized",
-      "id": 48
-    },
-    {
-      "quote": "All the musicians will be free",
-      "id": 49
-    },
-    {
-      "quote": "We are here to complete the revolution. We are building the future",
-      "id": 50
-    },
-    {
-      "quote": "Fur pillows are hard to actually sleep on",
-      "id": 51
-    },
-    {
-      "quote": "I'm the new Moses",
-      "id": 52
-    },
-    {
-      "quote": "I'm nice at ping pong",
-      "id": 53
-    },
-    {
-      "quote": "I love UZI. I be saying the same thing about Steve Jobs. I be feeling just like UZI",
-      "id": 54
     }
   ]
 }

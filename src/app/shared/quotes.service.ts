@@ -16,7 +16,8 @@ export class QuotesService {
   }
 
   getQuotes(): Observable<IQuote[]> {
-    return this.http.get<IQuote[]>('http://localhost:3000/quotes');
+    return this.http.get<IQuote[]>('http://localhost:3000/quotes')
+    .pipe(catchError(this.errorHandler));
   }
 
   saveQuote(quote: string) {

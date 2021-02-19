@@ -1,19 +1,18 @@
 <table class="table">
   <thead>
     <tr>
+      <th scope="col">Remove</th>
       <th scope="col">#</th>
       <th scope="col">Quote</th>
     </tr>
   </thead>
   <tbody>
-    <div *ngFor="let quote of quotes; index as i">
-      <tr>
+      <tr *ngFor="let quote of quotes; index as i">
         <td>
           <button type="button" class="btn btn-danger">Remove</button>
         </td>
         <th scope="col">{{ i + 1 }}</th>
         <td>{{ quote }}</td>
       </tr>
-    </div>
   </tbody>
 </table>

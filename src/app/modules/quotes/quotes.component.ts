@@ -11,12 +11,14 @@ export class QuotesComponent implements OnInit {
   quotes: string[] = [];
   maxLength: number = 0;
   avgLength: number = 0;
-  isFetching = false;
 
   constructor(private quotesService: QuotesService) {}
 
   ngOnInit() {
-    this.isFetching = true;
+    this.getQuotes();
+    this.getQuote();
+  }
+  getQuotes() {
     this.quotesService.getQuotes().subscribe((data) => {
       this.quotes = data.map((q) => {
         if (q.quote.length > this.maxLength) this.maxLength = q.quote.length;
@@ -24,22 +26,21 @@ export class QuotesComponent implements OnInit {
       });
       this.avgLength = this.quotesService.computeAvg(this.quotes);
     });
+  }
+  getQuote() {
     this.quotesService.getQuote().subscribe((data) => {
       this.quote = data.quote;
       if (data.quote.length > this.maxLength)
         this.maxLength = data.quote.length;
-      this.isFetching = false;
     });
   }
-
   updateQuote() {
-    this.ngOnInit();
+    this.getQuote();
   }
-
   saveQuote() {
     this.quotesService
       .saveQuote(this.quote)
       .subscribe((data) => this.quotes.push(data.quote));
-    this.ngOnInit();
+    this.getQuote();
   }
 }

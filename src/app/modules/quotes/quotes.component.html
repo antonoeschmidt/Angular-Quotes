@@ -4,7 +4,6 @@
   <button
     type="button"
     class="btn btn-dark"
-    [disabled]="isFetching"
     (click)="updateQuote()"
   >
     Get new Quote
@@ -12,7 +11,6 @@
   <button
     type="button"
     class="btn btn-success ml-3"
-    [disabled]="isFetching"
     (click)="saveQuote()"
   >
     Save Quote
@@ -34,3 +32,17 @@
     </div>
   </div>
 </div>
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Quote</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let quote of quotes; index as i">
+        <th scope="col">{{ i + 1 }}</th>
+        <td>{{ quote }}</td>
+      </tr>
+  </tbody>
+</table>
