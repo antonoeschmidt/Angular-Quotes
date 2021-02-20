@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { QuotesService } from 'src/app/shared/quotes.service';
-
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
@@ -41,6 +40,7 @@ export class QuotesComponent implements OnInit {
     this.quotesService
       .saveQuote(this.quote)
       .subscribe((data) => this.quotes.push(data.quote));
+    this.avgLength = this.quotesService.computeAvg(this.quotes);
     this.getQuote();
   }
 }

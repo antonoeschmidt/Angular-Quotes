@@ -1,0 +1,20 @@
+<div class="container mt-3">
+  <div class="col-sm-4">
+    <h2>Login to Quotes</h2>
+    <p>Please enter your credentials</p>
+
+    <div class="form-group">
+      <label>Name:</label>
+      <input
+        type="text" class="form-control mb-2" 
+        (keydown.enter)="login(user.value, pass.value)" #user/>
+      <label>Password:</label>
+      <input type="password" class="form-control"
+        (keydown.enter)="login(user.value, pass.value)" #pass />
+      <button class="btn btn-primary mt-3"
+        (click)="login(user.value, pass.value)">
+        Login
+      </button>
+    </div>
+  </div>
+</div>

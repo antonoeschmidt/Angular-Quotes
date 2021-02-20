@@ -16,8 +16,9 @@ export class QuotesService {
   }
 
   getQuotes(): Observable<IQuote[]> {
-    return this.http.get<IQuote[]>('http://localhost:3000/quotes')
-    .pipe(catchError(this.errorHandler));
+    return this.http
+      .get<IQuote[]>('http://localhost:3000/quotes')
+      .pipe(catchError(this.errorHandler));
   }
 
   saveQuote(quote: string) {
@@ -26,7 +27,7 @@ export class QuotesService {
       .pipe(catchError(this.errorHandler));
   }
 
-  computeAvg(quotes: string[]): number {    
+  computeAvg(quotes: string[]): number {
     let totalLen = 0;
     quotes.map((q) => (totalLen += q.length));
     return parseFloat((totalLen / quotes.length).toFixed(2));

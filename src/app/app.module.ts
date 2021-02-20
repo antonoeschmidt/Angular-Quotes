@@ -1,26 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './modules/quotes/quotes.component';
 import { HeaderComponent } from './core/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { QuotesTableComponent } from './modules/quotes-table/quotes-table.component';
+import { LoginComponent } from './modules/login/login.component';
+import { TokenInterceptorService } from './shared/token-interceptor.service';
+import { AboutComponent } from './modules/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     HeaderComponent,
-    QuotesTableComponent,
+    LoginComponent,
+    AboutComponent,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true,
+    },
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
